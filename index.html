@@ -33,11 +33,10 @@
 
 <body>
 	<button onClick="subscribe()">Subscibe</button>
-	<div id="textView"></div>
 	<script>
 		addEventListener('load', async () => {
 			let sw = navigator.serviceWorker.register('./sw.js')
-			console.log(sw)
+			console.log("sw", sw);
 		});
 
 		async function subscribe() {
@@ -51,6 +50,7 @@
 			document.getElementById('textView').innerHTML = JSON.stringify(push);
 		};
 	</script>
+	<div id="textView"></div>
 </body>
 
 </html>
