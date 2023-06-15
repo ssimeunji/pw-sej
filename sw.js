@@ -1,8 +1,8 @@
 self.addEventListener('push', function (e) {
-	const title = '2023';
+	const title = '2023년 6월 15일';
 
 	var options = {
-		body: 'This notification was generated from a push!',
+		body: '오늘은 목요일입니다 !!',
 		icon: 'images/example.png',
 		dir: 'rtl',
 		image: 'images/imgExam.jpg',
