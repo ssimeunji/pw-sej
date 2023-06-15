@@ -1,7 +1,11 @@
 self.addEventListener('push', function (e) {
+	const title = '2023';
+
 	var options = {
 		body: 'This notification was generated from a push!',
 		icon: 'images/example.png',
+		dir: 'rtl',
+		image: 'images/imgExam.jpg',
 		vibrate: [100, 50, 100],
 		data: {
 			dateOfArrival: Date.now(),
@@ -18,7 +22,8 @@ self.addEventListener('push', function (e) {
 			},
 		]
 	};
+
 	e.waitUntil(
-		self.registration.showNotification('Hello WrapCore', options)
+		self.registration.showNotification(title, options)
 	);
 });
