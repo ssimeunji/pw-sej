@@ -18,7 +18,7 @@ self.addEventListener('push', function (e) {
 			},
 			{
 				action: 'close', title: 'Close',
-				ison: 'images/xmark.png'
+				icon: 'images/xmark.png'
 			},
 		]
 	};
