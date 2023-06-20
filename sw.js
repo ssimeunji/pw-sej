@@ -1,8 +1,8 @@
 self.addEventListener('push', function (e) {
-	const title = '2023년 6월 15일';
+	const title = '2023년 6월 20일';
 
 	var options = {
-		body: '오늘은 목요일입니다 !!',
+		body: '오늘은 화요일이당 !!',
 		icon: 'images/example.png',
 		dir: 'rtl',
 		image: 'images/imgExam.jpg',
